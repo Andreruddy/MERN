@@ -56,4 +56,6 @@ export default function Categories({ data }) {
       </section>
     );
   });
+
+  // test
 }
