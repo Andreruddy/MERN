@@ -7,6 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+@import "colorVariables";
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -178,4 +179,44 @@ header {
         }
       }
     }
+  }
+
+  .testimonial-hero, .testimonial-hero img {
+    width: 365px; 
+    height:500px;
+    border-radius: 15px 15px 100px 15px;
+  }
+
+  /* footer */
+
+  footer {
+    border-top: 1px solid $gray-200;
+    padding-top: 50px;
+    .brand-tagline {
+      margin-top: 8px;
+      color: $gray-500; font-weight: 300; 
+    }
+    .list-group-item {
+      padding: 0.3125rem 0;
+      border: 0;
+      a, span {
+        color: $gray-500;
+        font-weight: 300;
+      }
+      a {
+        /* mixins from bootstap for hover and focuced */
+        @include hover-focus {
+          color: $gray-800;
+        }
+      }
+    }
+    .copyrights {
+      margin: 50px 0;
+      font-weight: 300;
+      // font-size: 0.875rem;
+      color: $gray-500;
+    }
+  }
+  main {
+    p {color: $gray-500; font-weight: 300;}
   }

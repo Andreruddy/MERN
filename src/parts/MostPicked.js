@@ -9,7 +9,10 @@ export default function MostPicked(props) {
         {" "}
         {props.data.map((item, idx) => {
           return (
-            <div key={`mostpicked-${idx}`} className={`item column-4 ${idx === 0 ? "row-2" : "row-1"}`}>
+            <div
+              key={`mostpicked-${idx}`}
+              className={`item column-4 ${idx === 0 ? "row-2" : "row-1"}`}
+            >
               <div className="card card-featured">
                 <div className="tag">
                   $ {item.price}{" "}
@@ -25,7 +28,7 @@ export default function MostPicked(props) {
                 <div className="meta-wrapper">
                   <Button
                     type="Link"
-                    className="streched-link d-block text-white"
+                    className="stretched-link d-block text-white"
                     href={`/properties/${item._id}`}
                   >
                     <h5> {item.name} </h5>{" "}
